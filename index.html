@@ -15,17 +15,18 @@
     <!-- Header -->
     <header id="header">
         <div class="logo"><a href="index.html">Samantha Joseph <span>- Junior Web Developer & Freelancer Photgrpaher</span></a></div>
-        <a href="#menu">Menu</a>
+        <div class="dropdown-menu">
+            <button onclick="myNav()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="menu-content">
+                <a href="#">Home</a>
+                <a href="#main">About Me</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </header>
 
     <!-- Nav -->
-    <nav id="menu">
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    
 
     <!-- Banner -->
     <section id="banner">
@@ -82,13 +83,32 @@
                     <h2>Skills</h2>
                     <p>I specialize in Full Stack Web development and Photoshop</p>
                 </header>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="skills-box">
+                    <div class="html-box skill-card">
+                        <img src="images/html5.png" alt="">
+                        <p>HTML5</p>
+                    </div>
+
+                    <div class="css-box skill-card">
+                        <img src="images/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="sass-box skill-card">
+                        <img src="images/sass.png" alt="">
+                        <p>SASS</p>
+                    </div>
+
+                    <div class="js-box skill-card">
+                        <img src="images/javascript.png" alt="">
+                        <p>JAVASCRIPT</p>
+                    </div>
+
+                    <div class="photoshop-box skill-card">
+                        <img src="images/photoshop.png" alt="">
+                        <p>ADOBE PHOTOSHOP</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -98,7 +118,7 @@
     <footer id="footer">
         <div class="copyright">
             <ul class="icons">
-                <li><a href="#" class="fab fa-github"></a><span class="label">Github</span></li>
+                <li><a href="https://github.com/SamJose123" class="fab fa-github"></a><span class="label">Github</span></li>
 
                 <li><a href="#" class="fab fa-git"></a><span class="label">Git</span></li>
 
@@ -114,13 +134,8 @@
     </footer>
 
 
-
-
-
-
-
-
-
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
