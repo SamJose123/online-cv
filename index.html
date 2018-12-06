@@ -178,24 +178,37 @@
     <footer id="footer">
         <div class="copyright">
             <ul class="icons">
+                <h2>Contact</h2>
                 <li><a href="https://github.com/SamJose123" class="fab fa-github"></a><span class="label">Github</span></li>
 
-                <li><a href="#" class="fab fa-git"></a><span class="label">Git</span></li>
+                <li><a href="https://www.linkedin.com/in/samantha-joseph-823178164/" class="fab fa-linkedin-in"></a><span class="label">Linkend In</span></li>
 
-                <li><a href="#" class="fab fa-linkedin-in"></a><span class="label">Linkend In</span></li>
+                <li><a href="##"onclick="myFunction()" class="fas fa-at"></a><span class="label">Email</span></li>
 
-                <li><a href="#" class="fas fa-at"></a><span class="label">Email</span></li>
-
-
+                <li><a href="##"onclick="myFunction2()" class="fas fa-phone"></a><span class="label">Call</span></li>
             </ul>
 
+            <p id="call">Cell: 081 771 5266</p>
+            <br>
+            <p id="email">Email: samantha.joseph27@gmail.com</p>
         </div>
-
     </footer>
 
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("call").style.display = "none";
+        function myFunction2() {
+            document.getElementById("call").style.display = "inline";
+            document.getElementById("call").style.color = "black";
+        }y = "inline";
+
+        document.getElementById("email").style.display = "none";
+        function myFunction() {
+            document.getElementById("email").style.display = "inline";
+            document.getElementById("email").style.color = "black";
+        }y = "inline";
+    </script>
 
 </body>
 </html>

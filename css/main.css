@@ -355,7 +355,10 @@ a {
 }
 
     a:hover {
-        color: rgba(153, 153, 153, 0.5);
+        color: rgba(184, 79, 131, 0.5);
+    }
+    i:hover .icons{
+font-size: 30px;
     }
 
 strong, b {
@@ -1186,7 +1189,7 @@ body.is-loading #banner:before {
 }
 
 #footer .copyright {
-    color: #bfbfbf;
+    color: #1d1b1b;
     font-size: 0.9em;
     margin: 150px 0 2em 0;
     padding: 0;
@@ -1195,7 +1198,7 @@ body.is-loading #banner:before {
 
 #footer .copyright .icons a {
     border-radius: 100%;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px #fff, 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px, 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
     display: block;
     font-size: 1em;
     height: 3em;
