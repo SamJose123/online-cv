@@ -1152,12 +1152,29 @@ body.is-loading #banner:before {
     margin-top: 80px;
     display: -ms-grid;
     display: grid;
-    grid-template-areas: 'html-box css-box sass-box js-box'
-    'photoshop-box';
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'html-box css-box sass-box'
+    'js-box git-box photoshop-box';
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
+
+.skills-box,
+.skill-card {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    border-radius: 6px;
+    height: 200px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
 
 .skill-card img {
     position: relative;
