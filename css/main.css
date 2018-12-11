@@ -248,6 +248,7 @@ ul.icons li {
     color: rgb(182, 124, 122);
 }
 
+
 /* Menu */
 
 
@@ -390,7 +391,30 @@ ul.icons li {
     margin-top: 20px;
 }
 
+.mySlides {
+    display:none;
+    margin-left: 26em;
+    padding: 19em 0 14em 3em;
+    
+}
+
 .skills-box {
+    background-image: url(../images/dirty-fruit-glass-174637.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    min-height: unset;
+    /* height: 100vh; */
+    
+}
+
+.mySlides {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+
+/* .skills-box {
     margin-top: 80px;
     display: -ms-grid;
     display: grid;
@@ -399,9 +423,9 @@ ul.icons li {
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-}
+} */
 
-.skills-box,
+/* .skills-box,
 .skill-card {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -413,10 +437,10 @@ ul.icons li {
     height: 200px;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-}
+} */
 
 
-.skill-card img {
+/* .skill-card img {
     position: relative;
     left: 50%;
     margin-top: 71px;
@@ -429,7 +453,7 @@ ul.icons li {
 .skill-card p {
     text-align: center;
     margin-top: 0;
-}
+} */
 
 /* Footer */
 

@@ -37,6 +37,7 @@
             <header>
                 <h1>Samantha Joseph</h1>
                 <h3>Junior Web Developer & Freelancer Photgrapher</h3>
+               
             </header>
             <a href="#main" class="btn">About Me</a>
         </div>
@@ -147,7 +148,15 @@
                     <p>I specialize in Full Stack Web development and Photoshop</p>
                 </header>
                 <div class="skills-box">
-                    <div class="html-box skill-card">
+                        <div class="w3-content w3-section" style="max-width:500px">
+                            <img class="mySlides" src="images/html5.png" style="width:55%">
+                            <img class="mySlides" src="images/css.png" style="width:55%">
+                            <img class="mySlides" src="images/javascript.png" style="width:55%">
+                            <img class="mySlides" src="images/sass.png" style="width:55%">
+                            <img class="mySlides" src="images/git.png" style="width:55%">
+                            <img class="mySlides" src="images/photoshop.png" style="width:55%">
+                        </div>
+                    <!-- <div class="html-box skill-card">
                         <img src="images/html5.png" alt="">
                         <p>HTML5</p>
                     </div>
@@ -175,7 +184,7 @@
                     <div class="photoshop-box skill-card">
                         <img src="images/photoshop.png" alt="">
                         <p>ADOBE PHOTOSHOP</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -217,6 +226,21 @@
             document.getElementById("email").style.display = "inline";
             document.getElementById("email").style.color = "black";
         }y = "inline";
+
+        var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);
+}
     </script>
 
 </body>
