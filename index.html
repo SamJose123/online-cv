@@ -23,6 +23,7 @@
                 <a href="#main">About Me</a>
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -68,7 +69,9 @@
             </div>
             
         </section>
-       
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
+
         <div id="education"></div>
         <!-- Section -->
         <section class="wrapper style2" style="padding:10px">
@@ -188,28 +191,62 @@
                 </div>
             </div>
         </section>
-
+<div id="projects"></div>
     </div>
     
+    <!-- Section -->
+    <section class="wrapper style2" style="padding:10px">
+        <div class="inner">
+            <div class="flex">
+                    <header class="align-center">
+                       <h2>Projects</h2>
+                    </header>
+                    <div class="projects-box">
+                        <div>
+                        <h4>Jon Chretien</h4>
+                        <a href="https://samjose123.github.io/JonChretein-Project2/index.html"><img src="images/jon-chretien.png" alt="" class="projectImg"></a>
+                        </div>
+
+                        <div>
+                            <h4>Code 4 CT</h4>
+                            <a href="https://samjose123.github.io/code4ct/index.html"><img src="images/code-4-ct.png" alt="" class="projectImg"></a>
+                        </div>
+                    </div>
+
+                    
+            </div>
+        </div>
+
+
+
+
+
+
+
+
     <!-- Footer -->
     <footer id="footer">
-        <div id="contact"></div>
-        <div class="copyright">
-            <ul class="icons">
-                <h2>Contact</h2>
-                <li><a href="https://github.com/SamJose123" class="fab fa-github"></a><span class="label">Github</span></li>
+        <section class="wrapper style1">
+            <div class="inner skills-section">
+                <div id="contact"></div>
+                <div class="copyright">
+                    <ul class="icons">
+                        <h2>Contact</h2>
+                        <li><a href="https://github.com/SamJose123" class="fab fa-github"></a><span class="label">Github</span></li>
 
-                <li><a href="https://www.linkedin.com/in/samantha-joseph-823178164/" class="fab fa-linkedin-in"></a><span class="label">Linkend In</span></li>
+                        <li><a href="https://www.linkedin.com/in/samantha-joseph-823178164/" class="fab fa-linkedin-in"></a><span class="label">Linkend In</span></li>
 
-                <li><a href="##"onclick="myFunction()" class="fas fa-at"></a><span class="label">Email</span></li>
+                        <li><a href="##"onclick="myFunction()" class="fas fa-at"></a><span class="label">Email</span></li>
 
-                <li><a href="##"onclick="myFunction2()" class="fas fa-phone"></a><span class="label">Call</span></li>
-            </ul>
+                        <li><a href="##"onclick="myFunction2()" class="fas fa-phone"></a><span class="label">Call</span></li>
+                    </ul>
 
-            <p id="call">Cell: 081 771 5266</p>
-            <br>
-            <p id="email">Email: samantha.joseph27@gmail.com</p>
-        </div>
+                    <p id="call">Cell: 081 771 5266</p>
+                    <br>
+                    <p id="email">Email: samantha.joseph27@gmail.com</p>
+                </div>
+            </div>
+        </section>
     </footer>
 
 
@@ -240,6 +277,22 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 3000);
+}
+
+// Back to top scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
     </script>
 
